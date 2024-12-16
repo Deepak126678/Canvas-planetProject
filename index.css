@@ -1,0 +1,104 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(circle at center, #000000, #001a33); 
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#buttonDiv {
+    width: 15vw;
+    height: 15vw; 
+    border-radius: 50%; 
+    background: radial-gradient(circle at 30% 30%, #00bfff, #005f99, #002244); 
+    box-shadow: 
+        inset -10px -10px 15px rgba(0, 0, 0, 0.7), 
+        10px 10px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 10%;
+    left:1%;
+    text-align: center;
+}
+
+/* Button Styling */
+#buttonDiv button {
+    width: 50%;
+    padding: 1vw;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff8c00, #ff4500); 
+    color: white;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#buttonDiv button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff4500, #ff6347);
+}
+
+/* File Input Styling */
+#buttonDiv input[type="file"] {
+    display: none; 
+}
+
+#buttonDiv label {
+    display: inline-block;
+    padding: 1vw;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 20px;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#buttonDiv label:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+#text {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+#text h1 {
+    margin: 0;
+    font-size: 2.5vw;
+    
+}
+
+/* Canvas TV Styling */
+#myCanvas {
+    border: 4px solid yellow;
+ 
+    background-color: black;
+   
+}
+
+
+
